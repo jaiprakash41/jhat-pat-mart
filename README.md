@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JhatpatMart
 
-## Getting Started
+A responsive grocery storefront and operations demo for the Noida launch described in the attached PRD.
 
-First, run the development server:
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000). Use `npm run lint` and `npm run build` to validate changes.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Demo flows
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Browse categories or search by English and Hinglish/Hindi aliases such as **atta**, **aloo**, **doodh**, and **palak**.
+- Add products to the basket; quantities and the guest basket persist in this browser.
+- Use `FRESH10` on baskets of ₹299 or more. Delivery is free over ₹399; the minimum order is ₹149.
+- Checkout supports Noida pincodes `201301`–`201307` and `201309`, delivery slots, UPI/cards/net banking and cash on delivery up to ₹2,000.
+- Local OTP for sign-in and cash on delivery: `1234`. Rider delivery confirmation also uses `1234`.
+- Orders, the admin demo, stock adjustments, and rider handoff are local browser state. No payment, SMS, WhatsApp, email, or customer data is sent to a service.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The app is a frontend MVP/demo. Production authentication, APIs, SQL Server/Dapper persistence, payment gateway and webhook handling, invoice PDFs, and messaging integrations still need backend services and provider credentials.

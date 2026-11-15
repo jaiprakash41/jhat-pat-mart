@@ -1,0 +1,17 @@
+{
+  "name": "JhatpatMart",
+  "short_name": "JhatpatMart",
+  "description": "Fresh groceries, delivered fast across Noida.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbfaf6",
+  "theme_color": "#194c35",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
